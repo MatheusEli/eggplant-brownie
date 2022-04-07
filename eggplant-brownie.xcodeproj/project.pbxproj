@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672307D027FF058900454A91 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672307CF27FF058900454A91 /* Refeicao.swift */; };
+		672307D227FF0ED200454A91 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672307D127FF0ED200454A91 /* Item.swift */; };
 		67C79B6227FCBF5800F88FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C79B6127FCBF5800F88FC9 /* AppDelegate.swift */; };
 		67C79B6427FCBF5800F88FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C79B6327FCBF5800F88FC9 /* SceneDelegate.swift */; };
 		67C79B6627FCBF5800F88FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C79B6527FCBF5800F88FC9 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		672307CF27FF058900454A91 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		672307D127FF0ED200454A91 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		67C79B5E27FCBF5800F88FC9 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C79B6127FCBF5800F88FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67C79B6327FCBF5800F88FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		67C79B6A27FCBF5C00F88FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C79B6D27FCBF5C00F88FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67C79B6F27FCBF5C00F88FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C79B7727FCC57C00F88FC9 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672307D327FF0F4700454A91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				672307CF27FF058900454A91 /* Refeicao.swift */,
+				672307D127FF0ED200454A91 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		672307D427FF0F8200454A91 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				67C79B6527FCBF5800F88FC9 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		672307D527FF0F9400454A91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67C79B6727FCBF5800F88FC9 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		67C79B5527FCBF5800F88FC9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +86,15 @@
 		67C79B6027FCBF5800F88FC9 /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				672307D527FF0F9400454A91 /* Views */,
+				672307D427FF0F8200454A91 /* Controllers */,
+				672307D327FF0F4700454A91 /* Models */,
 				67C79B6127FCBF5800F88FC9 /* AppDelegate.swift */,
 				67C79B6327FCBF5800F88FC9 /* SceneDelegate.swift */,
-				67C79B6527FCBF5800F88FC9 /* ViewController.swift */,
-				67C79B6727FCBF5800F88FC9 /* Main.storyboard */,
 				67C79B6A27FCBF5C00F88FC9 /* Assets.xcassets */,
 				67C79B6C27FCBF5C00F88FC9 /* LaunchScreen.storyboard */,
 				67C79B6F27FCBF5C00F88FC9 /* Info.plist */,
+				67C79B7727FCC57C00F88FC9 /* MyPlayground.playground */,
 			);
 			path = "eggplant-brownie";
 			sourceTree = "<group>";
@@ -138,9 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672307D227FF0ED200454A91 /* Item.swift in Sources */,
 				67C79B6627FCBF5800F88FC9 /* ViewController.swift in Sources */,
 				67C79B6227FCBF5800F88FC9 /* AppDelegate.swift in Sources */,
 				67C79B6427FCBF5800F88FC9 /* SceneDelegate.swift in Sources */,
+				672307D027FF058900454A91 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
