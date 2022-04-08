@@ -15,6 +15,7 @@
 		67C79B6927FCBF5800F88FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C79B6727FCBF5800F88FC9 /* Main.storyboard */; };
 		67C79B6B27FCBF5C00F88FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C79B6A27FCBF5C00F88FC9 /* Assets.xcassets */; };
 		67C79B6E27FCBF5C00F88FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C79B6C27FCBF5C00F88FC9 /* LaunchScreen.storyboard */; };
+		67E70F9627FF78A600013CD7 /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E70F9527FF78A600013CD7 /* RefeicoesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		67C79B6D27FCBF5C00F88FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67C79B6F27FCBF5C00F88FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67C79B7727FCC57C00F88FC9 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		67E70F9527FF78A600013CD7 /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				67C79B6527FCBF5800F88FC9 /* ViewController.swift */,
+				67E70F9527FF78A600013CD7 /* RefeicoesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				672307D227FF0ED200454A91 /* Item.swift in Sources */,
 				67C79B6627FCBF5800F88FC9 /* ViewController.swift in Sources */,
 				67C79B6227FCBF5800F88FC9 /* AppDelegate.swift in Sources */,
+				67E70F9627FF78A600013CD7 /* RefeicoesTableViewController.swift in Sources */,
 				67C79B6427FCBF5800F88FC9 /* SceneDelegate.swift in Sources */,
 				672307D027FF058900454A91 /* Refeicao.swift in Sources */,
 			);
