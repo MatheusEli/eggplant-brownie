@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class RefeicoesTableViewController: UITableViewController, ViewControllerDelegate{
+class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
