@@ -38,14 +38,8 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         if segue.identifier == "adicionar"{
             if let viewController = segue.destination as? ViewController{
                 viewController.delegate = self
-                
-                prepara(para: segue)
             }
         }
 
-    }
-    
-    func prepara(para segue: UIStoryboardSegue){
-        
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		672307D027FF058900454A91 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672307CF27FF058900454A91 /* Refeicao.swift */; };
 		672307D227FF0ED200454A91 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672307D127FF0ED200454A91 /* Item.swift */; };
+		6799C5872805A038001E1137 /* AdicionarItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799C5852805A038001E1137 /* AdicionarItensViewController.swift */; };
+		6799C5882805A038001E1137 /* AdicionarItensViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6799C5862805A038001E1137 /* AdicionarItensViewController.xib */; };
 		67C79B6227FCBF5800F88FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C79B6127FCBF5800F88FC9 /* AppDelegate.swift */; };
 		67C79B6427FCBF5800F88FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C79B6327FCBF5800F88FC9 /* SceneDelegate.swift */; };
 		67C79B6627FCBF5800F88FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C79B6527FCBF5800F88FC9 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		672307CF27FF058900454A91 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		672307D127FF0ED200454A91 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6799C5852805A038001E1137 /* AdicionarItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdicionarItensViewController.swift; sourceTree = "<group>"; };
+		6799C5862805A038001E1137 /* AdicionarItensViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdicionarItensViewController.xib; sourceTree = "<group>"; };
 		67C79B5E27FCBF5800F88FC9 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C79B6127FCBF5800F88FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67C79B6327FCBF5800F88FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		672307D427FF0F8200454A91 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6799C5852805A038001E1137 /* AdicionarItensViewController.swift */,
 				67C79B6527FCBF5800F88FC9 /* ViewController.swift */,
 				67E70F9527FF78A600013CD7 /* RefeicoesTableViewController.swift */,
 			);
@@ -66,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				67C79B6727FCBF5800F88FC9 /* Main.storyboard */,
+				6799C5862805A038001E1137 /* AdicionarItensViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			files = (
 				67C79B6E27FCBF5C00F88FC9 /* LaunchScreen.storyboard in Resources */,
 				67C79B6B27FCBF5C00F88FC9 /* Assets.xcassets in Resources */,
+				6799C5882805A038001E1137 /* AdicionarItensViewController.xib in Resources */,
 				67C79B6927FCBF5800F88FC9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +182,7 @@
 			files = (
 				672307D227FF0ED200454A91 /* Item.swift in Sources */,
 				67C79B6627FCBF5800F88FC9 /* ViewController.swift in Sources */,
+				6799C5872805A038001E1137 /* AdicionarItensViewController.swift in Sources */,
 				67C79B6227FCBF5800F88FC9 /* AppDelegate.swift in Sources */,
 				67E70F9627FF78A600013CD7 /* RefeicoesTableViewController.swift in Sources */,
 				67C79B6427FCBF5800F88FC9 /* SceneDelegate.swift in Sources */,

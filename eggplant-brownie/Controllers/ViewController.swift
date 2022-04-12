@@ -3,8 +3,39 @@ import UIKit
 protocol AdicionaRefeicaoDelegate{
     func add(_ refeicao: Refeicao)
 }
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AdicionaItemDelegate{
+    
+    
+    func add(_ item: Item) {
+        itens.append(item)
+        itensTableView.reloadData()
+    }
+    
+    
+    // MARK: - Atributos
+    @IBOutlet weak var itensTableView: UITableView!
+    
+    var delegate: AdicionaRefeicaoDelegate?
+    //var itens: [String] = ["Molho de tomate", "Queijo", "Molho apimentado", "Manjericão"]
+    var itens: [Item] = [Item(nome: "Molho de tomate", calorias: 40.0),
+                         Item(nome: "Queijo", calorias: 80.0),
+                         Item(nome: "Molho apimentado", calorias: 50.0),
+                         Item(nome: "Manjericão", calorias: 20.0)
+                        ]
+    var itensSelecionados: Array<Item> = []
+    
+    // MARK: - View life cycle
+    override func viewDidLoad() {
+        let botaoAdicionaItem = UIBarButtonItem(title: "adicionar", style: .plain, target: self, action: #selector(adicionarItem))
+        
+        navigationItem.rightBarButtonItem = botaoAdicionaItem
+    }
+    
+    @objc func adicionarItem(){
+        let adicionarItensViewControle = AdicionarItensViewController(delegate: self)
+        navigationController?.pushViewController(adicionarItensViewControle, animated: true)
+    }
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,17 +79,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
 
     }
-    // MARK: - Atributos
-    
-    var delegate: AdicionaRefeicaoDelegate?
-    //var itens: [String] = ["Molho de tomate", "Queijo", "Molho apimentado", "Manjericão"]
-    var itens: [Item] = [Item(nome: "Molho de tomate", calorias: 40.0),
-                         Item(nome: "Queijo", calorias: 80.0),
-                         Item(nome: "Molho apimentado", calorias: 50.0),
-                         Item(nome: "Manjericão", calorias: 20.0)
-                        ]
-    var itensSelecionados: Array<Item> = []
-    
+
     // MARK: - IBOutlets
     
     @IBOutlet var felicidadeTextField: UITextField?
@@ -83,6 +104,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         delegate?.add(refeicao)
         navigationController?.popViewController(animated: true)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
 }
